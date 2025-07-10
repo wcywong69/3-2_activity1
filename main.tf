@@ -5,11 +5,11 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "sctp-ce10-tfstate"
-    key    = "3-2-activity.tfstate"  #Change this
+    key    = "3-2-activity.tfstate" #Change this
     region = "ap-southeast-1"
   }
 }
 
 resource "aws_s3_bucket" "s3_tf" {
-  bucket_prefix =   "wong-3-2-activity-bucket" # Set your bucket name here
+  bucket_prefix = "wong-3-2-activity-bucket" # Set your bucket name here
 }
